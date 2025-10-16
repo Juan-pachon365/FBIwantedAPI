@@ -1,0 +1,1 @@
+function showTab(tab){ console.log('Mostrar pestaña:', tab); }

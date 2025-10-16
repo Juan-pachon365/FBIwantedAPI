@@ -1,37 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FBI — Personas Buscadas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI WebView</title>
+    <link rel="stylesheet" href="Style.css">
+    <script defer src="Script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>FBI — Personas Buscadas</h1>
-    <div class="controls">
-      <input id="searchInput" placeholder="Buscar por nombre o descripción..." />
-      <select id="filterSelect">
-        <option value="">Filtrar por título</option>
-      </select>
-      <button id="refreshBtn">Actualizar</button>
-    </div>
-  </header>
-
-  <main>
-    <section id="list" class="grid"></section>
-    <div id="loading" class="loading">Cargando...</div>
-    <div id="error" class="error" hidden></div>
-  </main>
-
-  <!-- Modal para detalles -->
-  <div id="modal" class="modal" hidden>
-    <div class="modal-content">
-      <button id="closeModal" class="close">Cerrar</button>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
-  <script src="fbi-webview.js"></script>
+    <nav>
+        <button onclick="showTab('home')">Inicio</button>
+        <button onclick="showTab('favoritos')">Favoritos</button>
+        <button onclick="showTab('individual')">Individual</button>
+        <button onclick="showTab('original')">Original</button>
+        <button onclick="showTab('informativo')">Info</button>
+    </nav>
+    <main id="app"></main>
 </body>
 </html>
