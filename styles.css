@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  color: #111;
+}
+
+/* Encabezado */
+header {
+  background: #0b3d91;
+  color: #fff;
+  padding: 16px;
+}
+header h1 {
+  margin: 0;
+}
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+input, select, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #ff8b00;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Lista de personas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  padding: 16px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #eee;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}

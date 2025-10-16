@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FBI — Personas Buscadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FBI — Personas Buscadas</h1>
+    <div class="controls">
+      <input id="searchInput" placeholder="Buscar por nombre o descripción..." />
+      <select id="filterSelect">
+        <option value="">Filtrar por título</option>
+      </select>
+      <button id="refreshBtn">Actualizar</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="list" class="grid"></section>
+    <div id="loading" class="loading">Cargando...</div>
+    <div id="error" class="error" hidden></div>
+  </main>
+
+  <!-- Modal para detalles -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="closeModal" class="close">Cerrar</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="fbi-webview.js"></script>
+</body>
+</html>
